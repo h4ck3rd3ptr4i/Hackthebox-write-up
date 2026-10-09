@@ -52,6 +52,7 @@ sudo nmap -sS -Pn < IP_Target >
 sudo nmap -Pn -p22,80,110,139,143,445,31337 -sV < IP_Target >
 ```
 ![alt text](screenshots/network_enumeration_with_nmap/3.PNG)
+
 *Look at Service Info: Host:*
 
 **Answer:** `NIX-NMAP-DEFAULT`
@@ -179,12 +180,14 @@ sudo nmap -sU -p53 -sV < IP_Target >
 sudo nmap -sS --top-ports 1000 -T 4 < IP_Target >
 ```
 ![alt text](screenshots/network_enumeration_with_nmap/15.PNG)
+
 *We only found two open ports: 22 and 80, a firewall may have detected our scan. So we used --source-port 53 to bypass it.* 
 
 ```bash
 sudo nmap -sS --source-port 53 --top-ports 1000 -T 4 < IP_Target >
 ```
 ![alt text](screenshots/network_enumeration_with_nmap/16.PNG)
+
 *We found another open port.Let's use ncat with --source-port 53 to connect to it.* 
 
 ```bash
