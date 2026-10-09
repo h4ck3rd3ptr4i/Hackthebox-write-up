@@ -1,4 +1,4 @@
-# HTB Academy Write-up: Information Gathering - Web Edition
+# HTB Academy Write-up: Network Enumeration with Nmap
 
 **Author:** Nguyen Khac Phat
 **Date:** October 09, 2026 
