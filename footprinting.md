@@ -1,7 +1,7 @@
 # HTB Academy Write-up: Footprinting
 
 **Author:** Nguyen Khac Phat
-**Date:** October 09, 2026 
+**Date:** October 10, 2026 
 **Platform:** Hack The Box Academy  
 **Module:** Footprinting
 
@@ -78,6 +78,7 @@ smbclient -N -L \\\\< IP_Target >\\sambashare
 ```
 ![alt text](screenshots/footprinting/7.PNG)
 ![alt text](screenshots/footprinting/8.PNG)
+
 *After some basic enumeration, we located flag.txt. Now, we just need to download and read it on our attack box.*
 ![alt text](screenshots/footprinting/9.PNG)
 
