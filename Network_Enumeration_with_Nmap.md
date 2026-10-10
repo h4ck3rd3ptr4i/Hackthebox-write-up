@@ -75,7 +75,7 @@ sudo nmap -p- -oA target < IP_Target >
 ![alt text](screenshots/network_enumeration_with_nmap/5.PNG)
 
 ```bash
-# Then we converted the results from XML to formatl HTML.
+# Then we converted the results from XML to format HTML.
 xsltproc target.xml -o target.html
 ```
 
